@@ -1,0 +1,17 @@
+
+
+
+function queTipoSoy<T>(argumento:T){
+  return argumento;
+}
+
+let soyString =queTipoSoy('Hola Mundo');
+let soyNumero =queTipoSoy(100);
+let soyArreglo =queTipoSoy([1,2,3,4,5,6,7,8,9,10]);
+
+let soyExplisito = queTipoSoy<number>(100);
+
+console.log(soyNumero);
+console.log(soyString);
+console.log(soyArreglo);
+console.log(soyExplisito);
